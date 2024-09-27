@@ -1,0 +1,1 @@
+{"root":["./environment.d.ts","./src/index.ts","./src/db/schema.ts","./src/routes/auth.ts","./src/routes/note.ts"],"version":"5.6.2"}

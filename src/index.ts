@@ -37,6 +37,19 @@ app.get("/api/check", async (req, res) => {
   }
 })
 
+const url = `https://taskmanager-backend-fj8c.onrender.com`;
+
+function reloadWebsite() {
+    fetch(url)
+    .then(response => {
+        console.log(response.status);
+    })
+    .catch(error => {
+        console.error(error.message);
+    });
+}
+
+setInterval(reloadWebsite, 29000);
 
 mongoose
   .connect(process.env.DATABASE_URL)
